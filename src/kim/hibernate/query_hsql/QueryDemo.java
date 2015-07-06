@@ -11,6 +11,7 @@ import kim.hibernate.entities_hsql.Employee;
 
 public class QueryDemo {
 	public static void main(String[] args) {
+		System.out.print(1+2+"3");
 		SessionFactory factory = HibernateUtils.getSessionFactory();
 
 		Session session = factory.getCurrentSession();

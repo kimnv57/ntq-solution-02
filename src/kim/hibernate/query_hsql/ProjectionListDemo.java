@@ -41,11 +41,9 @@ public class ProjectionListDemo {
 	 
 	            crit.setProjection(proj);
 	 
-	            // Add like condition.
-	            crit.add(Restrictions.like("empName", "%A%"));
+	            
+	            crit.add(Restrictions.like("empName", "%A%")).addOrder(Order.asc("empName"));
 	 
-	            // Add order
-	            crit.addOrder(Order.asc("empName"));
 	 
 	 
 	            // Execute Query.
